@@ -1,0 +1,17 @@
+<div class="container mobile-only">
+ <br/>
+  <div class="row">
+    <div class="col-sm-6 col-xs-6" id="checkin-button-container">
+        <button class="btn btn-primary" (click)="onCheckin()">Check-In</button>
+    </div>
+
+    <div class="col-sm-6 col-xs-6"  id="checkout-button-container">
+        <button class="btn btn-primary" (click)="onCheckout()">Check-Out</button>
+      </div>
+  </div>
+  <br>
+  <div class="alert alert-danger" *ngIf="showError">{{ message }}</div>
+  <div class="alert alert-success" *ngIf="showSuccess">{{ message }}</div>
+</div>
+
+
